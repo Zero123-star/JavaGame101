@@ -1,18 +1,23 @@
-## Getting Started
+##Text-Based RPG Combat System
+Java-based RPG demonstrating OOP principles, design patterns, and MySQL database integration.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+##What It Does
+Players create characters with customizable stats and equipment, manage inventories, and fight AI opponents in turn-based combat with temporary buffs/debuffs and status effects.
 
-## Folder Structure
+##Technologies Used
+Design Patterns: Singleton (database), Factory (item creation), Strategy (sorting algorithms)
+OOP: Abstract classes, inheritance hierarchies, polymorphism, interfaces, composition/aggregation
+Database: MySQL with JDBC, JSON serialization, CRUD operations, normalized schema with foreign keys
+Data Structures: HashMaps, ArrayLists, Iterators, custom comparators
+Technologies: Java 21, MySQL, Jackson, Maven
 
-The workspace contains two folders by default, where:
+##Key Components
+Stats.java: Dynamic stat system with permanent/temporary modifiers
+Inventory.java: Equipment slots, multiple sorting methods, item management
+Service.java: Combat calculations, item effects, turn resolution
+DB_*.java: Database layer with table managers for Items, Stats, Inventory, NPCs
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+##Running
+Create MySQL database proiectjava
+Run JDBCTest.java to create tables
+Run Project.java to start
